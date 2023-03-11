@@ -1,0 +1,24 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/assets/style.css" rel="stylesheet" type="text/css" />
+    <title>Numero Par/Impar</title>
+</head>
+<body>
+    <% if(num%2==0){%>
+        <h1>El numero <%=num %> es Par</h1>
+    <% }else {%>
+        <h1>El numero <%=num %> es ImPar</h1>
+    
+    <%}%>
+    
+    <ul>
+    <% for (let i = 1; i <= num; i++) { %>
+        <li><%= i %></li>
+    <% } %>
+    </ul>
+
+</body>
+</html>
